@@ -11,7 +11,7 @@ const Ticket = () => {
           <h1 className="text-3xl font-bold">Chamados</h1>
           <div className="flex items-center gap-4">
             <Button className="mt-3 w-full" asChild>
-              <Link href="/dashboard/new">Abrir chamado</Link>
+              <Link href="/ticket/new">Abrir chamado</Link>
             </Button>
           </div>
         </div>
@@ -20,6 +20,9 @@ const Ticket = () => {
           <thead>
             <tr>
               <th className="text-medium pl-1 text-left">ASSUNTO</th>
+              <th className="text-medium text-left">
+                CATEGORIA
+              </th>
               <th className="text-medium hidden text-left sm:block">
                 DATA CADASTRO
               </th>
@@ -28,6 +31,11 @@ const Ticket = () => {
             </tr>
           </thead>
           <tbody>
+            <TicketItem />
+            <TicketItem />
+            <TicketItem />
+            <TicketItem />
+            <TicketItem />
             <TicketItem />
           </tbody>
         </table>

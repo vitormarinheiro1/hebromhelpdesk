@@ -13,8 +13,9 @@ const TicketItem = () => {
     <>
       <tr className="h-16 border-b-2 border-b-slate-200 bg-slate-100 duration-200 last:border-b-0 hover:bg-gray-200">
         <td className="pl-1 text-left">PROBLEMA NO PC</td>
+        <td className="pl-1 text-left">Equipamentos</td>
         <td className="hidden text-left sm:table-cell">24/09/2024</td>
-        <td className="text-left">ABERTO</td>
+        <td className="text-left"><span className="bg-green-500 px-2 py-1 rounded-lg">ABERTO</span></td>
         <td className="text-left">
           <Dialog>
             <DialogTrigger asChild>
@@ -24,28 +25,26 @@ const TicketItem = () => {
             </DialogTrigger>
             <DialogContent className="sm:max-w-[600px]">
               <DialogHeader>
-                <DialogTitle className="text-2xl">
-                  Ticket: #1
-                </DialogTitle>
-                <DialogDescription className="text-lg">Detalhes do chamado</DialogDescription>
+                <DialogTitle className="text-2xl">Ticket: #1</DialogTitle>
+                <DialogDescription className="text-lg">
+                  Detalhes do chamado
+                </DialogDescription>
               </DialogHeader>
-              <div className="space-y-4 border-b border-solid h-28">
+              <div className="h-28 space-y-4 border-b border-solid">
                 <p>
                   <span className="font-bold">Categoria:</span> Sistemas
                 </p>
                 <p>
-                  <span className="font-bold">Assunto:</span> PROBLEMA
-                  NO PC
+                  <span className="font-bold">Assunto:</span> PROBLEMA NO PC
                 </p>
                 <p>
-                  <span className="font-bold">Descrição:</span>{" "}
-                  Computador não liga...
+                  <span className="font-bold">Descrição:</span> Computador não
+                  liga...
                 </p>
               </div>
               <div className="space-y-4">
                 <p>
-                  <span className="font-bold">Técnico:</span> Vitor
-                  Marinheiro
+                  <span className="font-bold">Técnico:</span> Vitor Marinheiro
                 </p>
                 <p>
                   <span className="font-bold">E-mail:</span>{" "}
