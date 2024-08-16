@@ -61,7 +61,9 @@ const Header = () => {
               </div>
             </div>
             <DialogFooter>
-              <Button type="submit">ENTRAR</Button>
+              <Button type="submit">
+                <Link href="/ticket">ENTRAR</Link>
+              </Button>
             </DialogFooter>
           </DialogContent>
         </Dialog>
