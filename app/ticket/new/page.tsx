@@ -2,7 +2,7 @@ import Container from "@/app/_components/container"
 import { Button } from "@/app/_components/ui/button"
 import Link from "next/link"
 
-const ticketItemNew = () => {
+const TicketItemNew = () => {
   return (
     <Container>
       <main className="mb-2 mt-9">
@@ -54,4 +54,4 @@ const ticketItemNew = () => {
   )
 }
 
-export default ticketItemNew
+export default TicketItemNew
