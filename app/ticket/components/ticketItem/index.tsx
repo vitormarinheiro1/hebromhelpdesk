@@ -15,7 +15,9 @@ const TicketItem = () => {
         <td className="pl-1 text-left">PROBLEMA NO PC</td>
         <td className="pl-1 text-left">Equipamentos</td>
         <td className="hidden text-left sm:table-cell">24/09/2024</td>
-        <td className="text-left"><span className="bg-green-500 px-2 py-1 rounded-lg">ABERTO</span></td>
+        <td className="text-left">
+          <span className="rounded-lg bg-green-500 px-2 py-1">ABERTO</span>
+        </td>
         <td className="text-left">
           <Dialog>
             <DialogTrigger asChild>
